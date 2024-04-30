@@ -18,9 +18,9 @@ Enkripsi Data: Memastikan kerahasiaan dan integritas data yang dipertukarkan ant
 
 3. What are the potential challenges or issues that may arise when handling bidirectional streaming in Rust gRPC, especially in scenarios like chat applications?
 
-Mengelola beberapa aliran yang berjalan bersamaan dan memastikan sinkronisasi antara klien dan server.
+Mengelola beberapa streams concurrent bersamaan dan memastikan sinkronisasi antara klien dan server.
 
-Menangani kesalahan dan waktu habis secara anggun, terutama dalam koneksi yang berlangsung lama seperti aplikasi obrolan.
+Menangani error dan timeouts secara efektif, terutama dalam koneksi yang berlangsung lama seperti aplikasi obrolan.
 
 Memastikan manajemen sumber daya yang tepat untuk mencegah kebocoran memori atau kehabisan sumber daya.
 
@@ -49,7 +49,7 @@ Mengimplementasikan mekanisme validasi dan verifikasi untuk memastikan integrita
 7. What impact does the adoption of gRPC as a communication protocol have on the overall architecture and design of distributed systems, particularly in terms of interoperability with other technologies and platforms?
 
 * Mendorong arsitektur berorientasi layanan dengan antarmuka dan kontrak yang terdefinisi dengan baik.
-* Memfasilitasi pengembangan poliglot dengan menyediakan antarmuka komunikasi yang independen bahasa.
+* Memfasilitasi polyglot development dengan menyediakan antarmuka komunikasi yang independen bahasa.
 * Mengharuskan adopsi teknologi dan alat yang kompatibel untuk service discovery, load balancing, dan observabilitas.
 
 8. What are the advantages and disadvantages of using HTTP/2, the underlying protocol for gRPC, compared to HTTP/1.1 or HTTP/1.1 with WebSocket for REST APIs?
